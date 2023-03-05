@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" type="image/png" href="./icons/profile.svg">
+	<title>Abhijit B.</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="svg.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.css"/>
+</head>
+
+<body>
+	<nav>
+		<i class="fa-solid fa-question" onclick="document.getElementById('about').scrollIntoView()"></i><!--About-->
+		<i class="fa-solid fa-database" onclick="document.getElementById('skills').scrollIntoView()"></i><!--Skills-->
+		<i class="fa-solid fa-tablet-screen-button" onclick="document.getElementById('projects').scrollIntoView()"></i><!--Projects-->
+		<i class="fa-solid fa-school" onclick="document.getElementById('education').scrollIntoView()"></i><!--Education-->
+		<i class="fa-solid fa-sun" id="foo" onclick="weather()"></i><!--Dark Mode Light Mode-->
+	</nav>
+	<div id="title">
+	  <h1 style="text-align:center;"><span id="maintitle">Abhijit. B.</span>
+		  <br>
+		  <small style="font-size:0.5em;">&lt;&lt;Full-Stack Developer&gt;&gt;</small>
+		  <br>
+		  <div class="iconlist">
+			  <img src="icons/github-mark.svg" onclick="window.open('https://github.com/Liftoff-Studios','_blank')" title="GitHub" id="github">
+			  <img src="icons/devTo.svg" onclick="window.open('https://dev.to/liftoffstudios','_blank')" title="Dev.to">
+			  <img src="icons/replit.svg" onclick="window.open('https://replit.com/@Liftoff-KA','_blank')" title="Replit">
+			  <img src="icons/discord.svg" onclick="window.open('https://discord.com/users/1026013335533137930','_blank')" title="Discord">
+			  <img src="icons/gmail.svg" onclick="window.open('mailto:abhijitbiswas07@gmail.com')" title="Email">
+		  </div>
+		  <span style="font-size:1.5em;position:absolute;text-align:center;width:100vw;left:0;top:80vh;display:inline-block;" id="down-arr-p"><span id="down-arr" onclick="window.scrollBy({top:250,behavior:'smooth'});">&dArr;</span></span>
+	  </h1>
+	</div>
+	<main style="color:var(--secondary);">
+		<section id="about">
+			<img src="./icons/profile.svg" width="150" style="float:right;border-radius:50%;padding:10px;">
+			<h2>About</h2>
+			<p>Hey there, welcome to my Portfolio! You can call me Abhijit. I've had quite an interesting journey that has led me to this point. I started programming at 10 years old. My first platform to learn coding was Khan Academy. Up to that point I used Khan Academy as a website to learn Maths, but then I discovered the Programming Section. And I absolutely loved it!!!</p><p> But eventually I had to move on as the scope of learning programming on Khan Academy was not very widespread. I've since moved on to sites such as FreeCodeCamp.org and Replit.com</p>
+
+			<p>
+				My other hobbies include 
+				<ul>
+					<li>Chess</li> 
+					<li>Model United Nations</li>
+					<li>Tennis</li>
+				</ul>
+			</p>
+			<p>I current am based off Replit's platform, although I have dabbled in other cloud editors such as CodeSandbox etc.</p>
+			<br><br>
+		</section>
+		<section id="skills">
+			<h2>Skills</h2>
+			I am proficient with many programming languages and frameworks <a href="#properlistskills">See full list</a>
+			<br><br>
+			<div id="skills-list" class="gallery js-flickity"
+  data-flickity-options='{ "wrapAround": true,"draggable": true,"autoPlay":3000 }'>
+				
+			</div>
+			<br><br>
+			
+			<div id="properlistskills" >
+			<h2>Full List</h2>	
+			</div>
+			<br><br>
+		</section>
+		<section id="projects">
+			<h2>Projects</h2>
+			<div id="project-pane">
+				
+			</div>
+			<br><br>
+		</section>
+		<section id="education">
+			<h2>Blog</h2>
+			Check out my blog <a href="/blog">here</a>
+			<br><br><br><br>
+		</section>
+	</main>
+	<script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
